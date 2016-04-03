@@ -1,13 +1,13 @@
-angular.module('app').directive('notificationList', function(){
+angular.module('app').directive('actionItemGroup', function(){
    return {
         replace: true,
-        template: '<div class="list-group"><notification ng-repeat="n in list" message="n"></notification></div>',
+        template: '<div class="list-group"><action-item ng-repeat="n in list" message="n"></action-item></div>',
         scope: { list: '=' }
    };
 });
 
 
-angular.module('app').directive('notification', function(){
+angular.module('app').directive('actionItem', function(){
    return {
         replace: true,
         template: [
