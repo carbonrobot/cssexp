@@ -1,6 +1,8 @@
 CSS Experiments
 ----------------
 
+**Requires Node >= 4.x**
+
 Clone the project files
 
 ```

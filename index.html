@@ -37,12 +37,12 @@
         
         <div class="row">
             <div class="col-lg-8">
-                <ng-include src="'includes/datatable.html'"></ng-include>
-                <ng-include src="'includes/timeline.html'"></ng-include>
+                <datatable></datatable>
+                <timeline></timeline>
             </div>
             <div class="col-lg-4">
-                <ng-include src="'includes/notifications.html'"></ng-include>
-                <ng-include src="'includes/chat.html'"></ng-include>
+                <notifications></notifications>
+                <chat></chat>
             </div>
         </div>
         
@@ -55,8 +55,13 @@
     <script src="scripts/controllers/default.js"></script>
     <script src="scripts/controllers/datatable.js"></script>
     <script src="scripts/controllers/notifications.js"></script>
-    <script src="scripts/directives/action-items.js"></script>
-    <script src="scripts/directives/action-panel.js"></script>
+    <script src="scripts/directives/notifications.js"></script>
+    <script src="scripts/directives/actionItem.js"></script>
+    <script src="scripts/directives/actionItemGroup.js"></script>
+    <script src="scripts/directives/actionPanel.js"></script>
+    <script src="scripts/directives/datatable.js"></script>
+    <script src="scripts/directives/timeline.js"></script>
+    <script src="scripts/directives/chat.js"></script>
 
 </body>
 
