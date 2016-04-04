@@ -12,22 +12,37 @@
     list-style: none;
 }
 
-.chat li {
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+.chat-message {
+    margin-bottom: 18px;
+    padding-bottom: 10px;
     border-bottom: 1px dotted #999;
+    .clearfix();
 }
 
-.chat li.left .chat-body {
-    margin-left: 60px;
+.chat-body {
+    .clearfix();
+    
+    p {
+        margin: 0;
+    }
 }
 
-.chat li.right .chat-body {
-    margin-right: 60px;
+.chat-message.left {
+    .chat-img {
+        float: left;
+    }
+    .chat-body {
+        margin-left: 60px;
+    }
 }
 
-.chat li .chat-body p {
-    margin: 0;
+.chat-message.right {
+    .chat-img {
+        float: right;
+    }
+    .chat-body {
+        margin-right: 60px;
+    }
 }
 
 // timeline
