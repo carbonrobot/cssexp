@@ -1,3 +1,3 @@
-angular.module('app').controller('CommentsRollupController', function($scope) {
-    $scope.data = {type:'comment',count:21,message:'New Comments!'};
+angular.module('app').controller('CommentsRollupController', function() {
+    this.data = {type:'comment',count:21,message:'New Comments!'};
 });
