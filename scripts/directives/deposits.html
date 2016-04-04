@@ -1,4 +1,4 @@
-<div class="panel panel-default" ng-controller="DepositsController">
+<div class="panel panel-default" ng-controller="DepositsController as dc">
     <div class="panel-heading">
         <i class="fa fa-bar-chart-o fa-fw"></i> Deposits
         <div class="pull-right">
@@ -6,6 +6,6 @@
         </div>
     </div>
     <div class="panel-body">
-        <datatable data="deposits"></datatable>
+        <datatable data="dc.deposits"></datatable>
     </div>
 </div>
