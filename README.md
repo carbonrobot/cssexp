@@ -1,4 +1,4 @@
-CSS Experiments
+Refactoring into directives in Angular
 ----------------
 
 **Requires Node >= 4.x**

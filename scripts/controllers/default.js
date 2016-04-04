@@ -1,3 +1,3 @@
-angular.module('app', []).controller('DefaultController', function($scope) {
+angular.module('app').controller('DefaultController', function($scope) {
 
 });

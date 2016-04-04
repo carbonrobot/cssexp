@@ -1,28 +1,18 @@
-<div class="panel panel-default" ng-controller="DatatableController">
-    <div class="panel-heading">
-        <i class="fa fa-bar-chart-o fa-fw"></i> Tables of Data
-        <div class="pull-right">
-            <button type="button" class="btn btn-default btn-xs">Action</button>
-        </div>
-    </div>
-    <div class="panel-body">
-        <table class="table table-bordered table-hover table-striped">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Amount</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="d in data">
-                    <td>{{d.id}}</td>
-                    <td>{{d.date|date:'shortDate'}}</td>
-                    <td>{{d.date|date:'shortTime'}}</td>
-                    <td>{{d.cost|currency}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="d in data">
+            <td>{{d.id}}</td>
+            <td>{{d.date|date:'shortDate'}}</td>
+            <td>{{d.date|date:'shortTime'}}</td>
+            <td>{{d.cost|currency}}</td>
+        </tr>
+    </tbody>
+</table>

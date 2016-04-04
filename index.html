@@ -17,28 +17,29 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Dashboard</h1>
+                {{data|json}}
             </div>
         </div>
         
         <div class="row">
             <div class="col-lg-3 col-md-6">
-                <action-panel message="{type:'comment',count:21,message:'New Comments!'}" class="panel-primary"></action-panel>
+                <comments-rollup></comments-rollup>
             </div>
             <div class="col-lg-3 col-md-6">
-                <action-panel message="{type:'tasks',count:14,message:'New Tasks!'}"></action-panel>
+                <tasks-rollup></tasks-rollup>
             </div>
             <div class="col-lg-3 col-md-6">
-                <action-panel message="{type:'shopping-cart',count:124,message:'New Orders!'}"></action-panel>
+                <orders-rollup></orders-rollup>
             </div>
             <div class="col-lg-3 col-md-6">
-                <action-panel message="{type:'support',count:19,message:'Support Tickets!'}"></action-panel>
+                <support-rollup></support-rollup>
             </div>
         </div>
         
         <div class="row">
             <div class="col-lg-8">
-                <datatable></datatable>
-                <timeline></timeline>
+                <deposits></deposits>
+                <newsfeed></newsfeed>
             </div>
             <div class="col-lg-4">
                 <notifications></notifications>
@@ -51,17 +52,32 @@
     <script src="bower_components/less/dist/less.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
+    
     <script src="scripts/app.js"></script>
+    
     <script src="scripts/controllers/default.js"></script>
-    <script src="scripts/controllers/datatable.js"></script>
+    <script src="scripts/controllers/deposits.js"></script>
     <script src="scripts/controllers/notifications.js"></script>
+    <script src="scripts/controllers/newsfeed.js"></script>
+    <script src="scripts/controllers/commentsRollup.js"></script>
+    <script src="scripts/controllers/ordersRollup.js"></script>
+    <script src="scripts/controllers/supportRollup.js"></script>
+    <script src="scripts/controllers/tasksRollup.js"></script>
+    
     <script src="scripts/directives/notifications.js"></script>
     <script src="scripts/directives/actionItem.js"></script>
     <script src="scripts/directives/actionItemGroup.js"></script>
-    <script src="scripts/directives/actionPanel.js"></script>
+    <script src="scripts/directives/messagePanel.js"></script>
     <script src="scripts/directives/datatable.js"></script>
+    <script src="scripts/directives/deposits.js"></script>
     <script src="scripts/directives/timeline.js"></script>
+    <script src="scripts/directives/timelineItem.js"></script>
+    <script src="scripts/directives/newsfeed.js"></script>
     <script src="scripts/directives/chat.js"></script>
+    <script src="scripts/directives/commentsRollup.js"></script>
+    <script src="scripts/directives/ordersRollup.js"></script>
+    <script src="scripts/directives/supportRollup.js"></script>
+    <script src="scripts/directives/tasksRollup.js"></script>
 
 </body>
 
